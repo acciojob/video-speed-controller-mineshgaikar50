@@ -1,2 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
 
-/* Your CSS Code here. */
+.player {
+    max-width: 750px;
+    width: 100%;
+    border: 5px solid #555;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.viewer {
+    width: 100%;
+    max-height: 420px;
+    background: black;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #444;
+}
+
+.player__button {
+    font-size: 18px;
+    margin-right: 10px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.player__button:hover {
+    background: white;
+    color: black;
+}
+
+.progress {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.progress__filled {
+    width: 0%;
+    height: 10px;
+    background: #00ff00;
+    position: absolute;
+}
+
+input[type="range"] {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.skip {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skip:hover {
+    background: #e64a19;
+}
