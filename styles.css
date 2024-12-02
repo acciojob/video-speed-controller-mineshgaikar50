@@ -54,8 +54,6 @@ body {
 }
 
 .progress__filled {
-    width: 0%;
-    height: 10px;
     background: #00ff00;
     position: absolute;
 }
